@@ -1,0 +1,14 @@
+﻿<controls:Window x:Class="TennisGameSimulationAvaloniaOld.MainWindow"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="https://github.com/avaloniaui"
+        mc:Ignorable="d"
+        Title="Tennis Game Simulation" Height="450" Width="800">
+        <controls:StackPanel>
+            <controls:TextBlock Text="{controls:Binding Score}" FontSize="20" HorizontalAlignment="Center" Margin="10"/>
+            <controls:Button Command="{controls:Binding IncreasePlayerAScoreCommand}" Content="Increase Player A's Score" Margin="10"/>
+            <controls:Button Command="{controls:Binding IncreasePlayerBScoreCommand}" Content="Increase Player B's Score" Margin="10"/>
+        </controls:StackPanel>
+</controls:Window>

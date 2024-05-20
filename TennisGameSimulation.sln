@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisGameSimulationConsole", "TennisGameSimulationConsole\TennisGameSimulationConsole.csproj", "{DCD517EB-5116-40AC-A6B1-5D34ABC76C6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisGameSimulationConsole", "TennisGameSimulationConsole\TennisGameSimulationConsole.csproj", "{DCD517EB-5116-40AC-A6B1-5D34ABC76C6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisGameSimulationWpf", "TennisGameSimulationWpf\TennisGameSimulationWpf.csproj", "{F788EFC7-6454-4156-8171-9706695D116C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisGameSimulationWpf", "TennisGameSimulationWpf\TennisGameSimulationWpf.csproj", "{F788EFC7-6454-4156-8171-9706695D116C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisGameSimulationWpfTests", "TennisGameSimulationWpfTests\TennisGameSimulationWpfTests.csproj", "{19923DF6-A477-42E9-9BB1-963BA3E9E80F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisGameSimulationWpfTests", "TennisGameSimulationWpfTests\TennisGameSimulationWpfTests.csproj", "{19923DF6-A477-42E9-9BB1-963BA3E9E80F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisGameSimulationInterfaces", "TennisGameSimulationInterfaces\TennisGameSimulationInterfaces.csproj", "{737A6321-E643-4FA8-A9F0-21162A7456EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisGameSimulationInterfaces", "TennisGameSimulationInterfaces\TennisGameSimulationInterfaces.csproj", "{737A6321-E643-4FA8-A9F0-21162A7456EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisGameSimulationModels", "TennisGameSimulationModels\TennisGameSimulationModels.csproj", "{0817773A-B6FE-41C1-A960-C225A575212E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisGameSimulationModels", "TennisGameSimulationModels\TennisGameSimulationModels.csproj", "{0817773A-B6FE-41C1-A960-C225A575212E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisGameSimulationAvaloniaTests", "TennisGameSimulationAvaloniaTests\TennisGameSimulationAvaloniaTests.csproj", "{CB15CA6D-09AD-4EBA-9C9F-DD5F5FA97566}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisGameSimulationAvalonia", "TennisGameSimulationAvalonia\TennisGameSimulationAvalonia.csproj", "{A7A899D0-F19D-432D-AED7-AD88355B9324}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{0817773A-B6FE-41C1-A960-C225A575212E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0817773A-B6FE-41C1-A960-C225A575212E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0817773A-B6FE-41C1-A960-C225A575212E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB15CA6D-09AD-4EBA-9C9F-DD5F5FA97566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB15CA6D-09AD-4EBA-9C9F-DD5F5FA97566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB15CA6D-09AD-4EBA-9C9F-DD5F5FA97566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB15CA6D-09AD-4EBA-9C9F-DD5F5FA97566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7A899D0-F19D-432D-AED7-AD88355B9324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A899D0-F19D-432D-AED7-AD88355B9324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A899D0-F19D-432D-AED7-AD88355B9324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A899D0-F19D-432D-AED7-AD88355B9324}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
