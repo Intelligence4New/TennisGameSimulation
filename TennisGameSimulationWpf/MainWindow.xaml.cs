@@ -1,24 +1,29 @@
-﻿using System.Text;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using TennisGameSimulationInterfaces.Models;
+using TennisGameSimulationInterfaces.ViewModels;
+using TennisGameSimulationModels;
+using TennisGameSimulationWpf.ViewModels;
 
-namespace TennisGameSimulationWpf
+namespace TennisGameSimulationWpf;
+
+/// <summary>
+///     Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+        var services = new ServiceCollection();
+        ConfigureServices(services);
+        var serviceProvider = services.BuildServiceProvider();
+        DataContext = serviceProvider.GetRequiredService<IGameViewModel>();
+    }
+
+    private static void ConfigureServices(IServiceCollection services)
+    {
+        services.AddSingleton<IGame, Game>();
+        services.AddSingleton<IGameViewModel, GameViewModel>();
     }
 }
